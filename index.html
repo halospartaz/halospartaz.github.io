@@ -3,75 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ahmad Aliff Haiqal's Portfolio</title>
+    <meta name="description" content="Welcome to my GitHub Pages!">
+    <title>Ahmad Aliff's Portfolio</title>
     <style>
         body {
-            background-color: skyblue;
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 400vh;
             margin: 0;
+            padding: 0;
+            background-color: #448EE4;
+            color: #333;
         }
-        .container {
+
+        header {
+            background-color: #282c34;
+            padding: 20px;
             text-align: center;
         }
-        h1 {
-            font-size: 3em;
-            color: rgb(0, 0, 0);
+
+        header h1 {
+            color: white;
+            font-size: 2.5em;
         }
-        p {
-            font-size: 1.2em;
-            color: rgb(0, 0, 0);
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
         }
-        a {
-            color: rgb(0, 0, 0);
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
             text-decoration: none;
-            font-weight: bold;
-            border: 2px solid rgb(70, 69, 69);
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            text-transform: uppercase;
         }
-        a:hover {
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #282c34;
+        }
+
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .project-item {
             background-color: white;
-            color: skyblue;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
         }
-        .projects {
-            margin-top: 20px;
+
+        .project-item a {
+            text-decoration: none;
+            color: #282c34;
+            font-weight: bold;
         }
-        .projects ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .projects li {
-            margin: 10px 0;
+
+        footer {
+            background-color: #282c34;
             color: white;
-        }
-        .projects li a {
-            color: white;
-            text-decoration: underline;
-        }
-        .projects li a:hover {
-            color: lightyellow;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Data Analyst Portfolio</h1>
-        <p>Explore my work, projects, and contributions in data analysis.</p>
-        <div class="projects">
-            <h2>Featured Projects</h2>
-            <ul>
-                <li><a href="https://github.com/your-username/project1" target="_blank">Project 1: Sales Data Dashboard</a></li>
-                <li><a href="https://github.com/your-username/project2" target="_blank">Project 2: Customer Segmentation Analysis</a></li>
-                <li><a href="https://github.com/your-username/project3" target="_blank">Project 3: Predictive Analytics for Marketing</a></li>
-            </ul>
+
+    <header>
+        <h1>Welcome to my Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Ahmad Aliff Haiqal, a passionate developer who loves coding and building cool projects.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <div class="project-item">
+                <h3>Project 1</h3>
+                <p>A brief description of your project.</p>
+                <a href="https://github.com/your-username/project1" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-item">
+                <h3>Project 2</h3>
+                <p>A brief description of your project.</p>
+                <a href="https://github.com/your-username/project2" target="_blank">View on GitHub</a>
+            </div>
         </div>
-        <a href="https://github.com/your-username" target="_blank">Visit My GitHub</a>
-    </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via <a href="mailto:haiqal6@gmail.com">email</a> or connect with me on <a href="https://linkedin.com/in/ahmadaliffhaiqal" target="_blank">LinkedIn</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
