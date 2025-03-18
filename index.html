@@ -7,192 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmad Aliff - Portfolio</title>
 
+    <!--https://fontawesome.com/ CSS Font Styling
+        
+
+    https://boxicons.com/
+
+    https://iconoir.com/
+
+    https://iconic.app/
+
+    https://phosphoricons.com/
+
+    https://feathericons.com/
+
+    https://pebble.framer.media/
+                                                    -->
+
     <!-- Font Awesome Icons-->
-    <script src="https://kit.fontawesome.com/a9cdbedf57.js" crossorigin="anonymous"></script>
-    <style>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <!--Styling CSS-->
     <link rel="stylesheet" id="themeStylesheet" href="./assets/css/style.css">
 
-</head>
-
-
-        /* Global Styles */
-        body {
-            font-family: 'Helvetica Neue', sans-serif;
-            line-height: 1.7;
-            color: #333;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Header Styles */
-        header {
-            background-color: #1a1a1a;
-            color: #fff;
-            text-align: center;
-            padding: 50px 0;
-            border-bottom: 4px solid #3498db;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-
-        /* Navigation Styles */
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #fff;
-            border-bottom: 2px solid #eaeaea;
-            padding: 10px 0;
-        }
-
-        nav a {
-            font-weight: bold;
-            margin: 0 20px;
-            text-decoration: none;
-            color: #3498db;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #1abc9c;
-        }
-
-        /* Section Styles */
-        section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            color: #333;
-        }
-
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 40px;
-            color: #666;
-        }
-        
-        .btn {
-        background-color: #000000; /* Change the background color */
-        color: white;              /* Change the text color */
-        padding: 10px 20px;        /* Adjust padding for button size */
-        font-size: 16px;           /* Change font size */
-        border: none;              /* Remove border */
-        border-radius: 5px;        /* Rounded corners */
-        cursor: pointer;           /* Change cursor to pointer */
-        text-decoration: none;     /* Remove underline from the link */
-        display: inline-block;     /* Make the button act like a block element */
-        transition: background-color 0.3s ease; /* Smooth hover effect */
-    }
-
-    .btn:hover {
-        background-color: #2980b9; /* Change background on hover */
-    }
-
-    .btn a {
-        color: inherit;            /* Ensure the link text inherits the button text color */
-        text-decoration: none;     /* Remove underline */
-    }
-
-    .btn a i {
-        margin-right: 8px;         /* Add spacing between icon and text */
-    }
-
-        /* About Section */
-        #about {
-            background-color: #f0f0f0;
-        }
-
-        /* Project Section Styles */
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .project-item {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .project-item h3 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .project-item p {
-            color: #666;
-        }
-
-        .project-item a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 15px;
-            color: #3498db;
-            border: 2px solid #3498db;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .project-item a:hover {
-            background-color: #3498db;
-            color: #fff;
-        }
-
-        /* Contact Section */
-        #contact {
-            background-color: #3498db;
-            color: white;
-        }
-
-        #contact a {
-            color: #fff;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        /* Footer Styles */
-        footer {
-            background-color: #1a1a1a;
-            color: #aaa;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 
 <body>
@@ -221,52 +57,136 @@
 
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div>
+                <div>
+                    <h4 title="Hello, How are you?">Hi, There!</h4>
+                    <h2 class="hero-section__title">I'm <span>Ahmad Aliff Haiqal</span></h2>
+                    <p class="hero-section__desc">I am a Mechanical and Manufacturing Engineer transitioning aspiring to take on the skills to become a Junior Data Analyst</p>
+                </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a mechanical engineer transitioning into data analytics. I combine analytical problem-solving skills with a passion for data-driven decision-making. I am excited to leverage Python, SQL, and Excel to drive impactful data solutions.</p>
-    </section>
+                <ul class="social-icons">
+                    <!-- Social Icons -->
+                    <li>
+                        <a href="https://www.linkedin.com/in/ahmadaliffhaiqal/" target="_blank">
+                            <box-icon name='linkedin' type='logo' flip='vertical' animation='tada' color='#ffffff' ></box-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/halospartaz" target="_blank">
+                            <box-icon name='github' type='logo' animation='tada' flip='vertical' color='#ffffff' ></box-icon>
+                        </a>
+                    </li>
+                </ul>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-item">
-                <h3>Retail Sales Analysis SQL Project</h3>
-                <p>This project demonstrates SQL skills in analyzing retail sales data, setting up databases, and answering business questions.</p>
-                <a href="https://github.com/halospartaz/sql_retail_sales" target="_blank">View on GitHub</a>
+                <div class="hero-buttons">
+                    <button class="btn btn-dark-outlined">
+                        <a href="./assets/resume/Ahmad Aliff Haiqal_Resume.pdf" download>Download Resume</a>
+                    </button>
+                </div>
             </div>
-            <div class="project-item">
-                <h3>Placeholder</h3>
-                <p>Placeholder</p>
-                <a href="https://github.com/your-username/project2" target="_blank">View on GitHub</a>
-            </div>
-        </div>
-    </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <button class="btn">
-            <a href="mailto:haiqal6@gmail.com" target="_blank">
-                <i class="fa-solid fa-envelope"></i> Email
-            </a>
-        </button>
-        <button class="btn">
-            <a href="https://linkedin.com/in/ahmadaliffhaiqal" target="_blank">
-                <i class="fa-brands fa-linkedin"></i> LinkedIn
-            </a>
-        </button>
-    </section>
+            <div class="hero-img">
+                <img src="assets/img/AAH.jpg" alt="Ahmad Aliff-portfolio" width="350">
+            </div>
+        </section>
+
+        <!-- About Section  -->
+        <section class="about-section" id="about">
+
+            <div class="about-content">
+                <h4>About Me</h4>
+                <h2>I am a<br> <span>Junior Data Analyst</span></h2>
+                <p>I'm a mechanical engineer transitioning into data analytics. I combine analytical problem-solving skills with a passion for data-driven decision-making. I am excited to leverage Python, SQL, and Excel to drive impactful data solutions.
+                </p>
+
+                <button class="btn btn-primary">
+                    <a href="https://github.com/halospartaz" target="_blank">
+                        Know More <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    </a>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section" id="projects">
+            <h2>My <span>Projects</span></h2>
+            <div class="projects-cards">
+                <div class="projects-card-box">
+                    <div class="projects-card-box__icons">
+                        <box-icon name='data' type='solid' animation='burst' flip='vertical' color='#ffffff' ></box-icon>
+                    </div>
+                    <div class="projects-card-box__desc">
+                        <h4>Retail Sales Analysis SQL Project</h4>
+                        <p>This project demonstrates SQL skills in analyzing retail sales data, setting up databases, and answering business questions.
+                        </p>
+                    </div>
+                    <div class="projects-card-box__buttons">
+                        <button class="btn btn-dark-outlined2">
+                            <a href="https://github.com/halospartaz/sql_retail_sales" target="_blank">View <i
+                                    class="fa-solid fa-external-link"></i></a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="projects-card-box">
+                    <div class="projects-card-box__icons">
+                        <box-icon name='data' type='solid' animation='burst' flip='vertical' color='#ffffff' ></box-icon>
+                    </div>
+                    <div class="projects-card-box__desc">
+                        <h4>Placeholder</h4>
+                        <p>Placeholder
+                        </p>
+                    </div>
+                    <div class="projects-card-box__buttons">
+                        <button class="btn btn-dark-outlined2">
+                            <a href="Placeholder"
+                                target="_blank">View <i class="fa-solid fa-external-link"></i></a>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="projects-card-box">
+                    <div class="projects-card-box__icons">
+                        <box-icon name='data' type='solid' animation='burst' flip='vertical' color='#ffffff' ></box-icon>
+                    </div>
+                    <div class="projects-card-box__desc">
+                        <h4>Placeholder</h4>
+                        <p>Placeholder
+                        </p>
+                    </div>
+                    <div class="projects-card-box__buttons">
+                        <button class="btn btn-dark-outlined2">
+                            <a href="Placeholder"
+                                target="_blank">View <i class="fa-solid fa-external-link"></i></a>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            </form>
+            <div class="contact__github">
+                <button class="btn">
+                    <a href="https://github.com/ahmadaliffhaiqal" target="_blank">
+                        <box-icon name='github' type='logo' color='#ffffff' size="36px" ></box-icon>
+                    </a>
+                </button>
+            </div>
+        </section>
+
+    </main>
 
     <footer>
         <p>Copyright &copy; 2025 - <a href="https://github.com/halospartaz" target="_blank">Ahmad Aliff Haiqal</a> - All Rights
             Reserved.</p>
     </footer>
-
-</body>
 
 </html>
