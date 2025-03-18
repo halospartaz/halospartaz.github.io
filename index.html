@@ -3,10 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to Ahmad Aliff's Portfolio. Explore my projects and experience.">
-    <title>Ahmad Aliff's Portfolio</title>
+    <title>Ahmad Aliff - Portfolio</title>
+
+    <!-- Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/a9cdbedf57.js" crossorigin="anonymous"></script>
     <style>
+
+    <!--Styling CSS-->
+    <link rel="stylesheet" id="themeStylesheet" href="./assets/css/style.css">
+
+</head>
+
+
         /* Global Styles */
         body {
             font-family: 'Helvetica Neue', sans-serif;
@@ -76,6 +86,32 @@
             margin-bottom: 40px;
             color: #666;
         }
+        
+        .btn {
+        background-color: #000000; /* Change the background color */
+        color: white;              /* Change the text color */
+        padding: 10px 20px;        /* Adjust padding for button size */
+        font-size: 16px;           /* Change font size */
+        border: none;              /* Remove border */
+        border-radius: 5px;        /* Rounded corners */
+        cursor: pointer;           /* Change cursor to pointer */
+        text-decoration: none;     /* Remove underline from the link */
+        display: inline-block;     /* Make the button act like a block element */
+        transition: background-color 0.3s ease; /* Smooth hover effect */
+    }
+
+    .btn:hover {
+        background-color: #2980b9; /* Change background on hover */
+    }
+
+    .btn a {
+        color: inherit;            /* Ensure the link text inherits the button text color */
+        text-decoration: none;     /* Remove underline */
+    }
+
+    .btn a i {
+        margin-right: 8px;         /* Add spacing between icon and text */
+    }
 
         /* About Section */
         #about {
@@ -160,9 +196,29 @@
 </head>
 
 <body>
+
     <header>
-        <h1>Ahmad Aliff Haiqal</h1>
-        <p>Data Analyst | Mechanical Engineer</p>
+
+        <div>
+            <a href="./index.html"><span class="logo">JUNIOR DATA ANALYST</span></a>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+
     </header>
 
     <nav>
@@ -194,12 +250,21 @@
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:haiqal6@gmail.com">haiqal6@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/ahmadaliffhaiqal" target="_blank">Ahmad Aliff Haiqal</a></p>
+        <button class="btn">
+            <a href="mailto:haiqal6@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+        </button>
+        <button class="btn">
+            <a href="https://linkedin.com/in/ahmadaliffhaiqal" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+        </button>
     </section>
 
     <footer>
-        <p>&copy; 2025 Ahmad Aliff Haiqal</p>
+        <p>Copyright &copy; 2025 - <a href="https://github.com/halospartaz" target="_blank">Ahmad Aliff Haiqal</a> - All Rights
+            Reserved.</p>
     </footer>
 
 </body>
