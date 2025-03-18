@@ -1,60 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to my GitHub Pages!">
+    <meta name="description" content="Welcome to Ahmad Aliff's Portfolio. Explore my projects and experience.">
     <title>Ahmad Aliff's Portfolio</title>
     <style>
+        /* Global Styles */
         body {
-            font-family: 'Helvetica', 'Arial', sans-serif;
-            line-height: 1.6;
+            font-family: 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
             color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
             background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
+        /* Header Styles */
         header {
-            background-color: #282c34;
-            padding: 20px;
+            background-color: #1a1a1a;
+            color: #fff;
             text-align: center;
-            margin-bottom: 40px;
+            padding: 50px 0;
+            border-bottom: 4px solid #3498db;
         }
 
-        header h1, h2 {
-            color: #2c3e50;
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
         }
 
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation Styles */
         nav {
             display: flex;
             justify-content: center;
-            background-color: #333;
-            margin-bottom: 30px;
+            background-color: #fff;
+            border-bottom: 2px solid #eaeaea;
+            padding: 10px 0;
         }
 
         nav a {
-            color: #3498db;
-            padding: 14px 20px;
+            font-weight: bold;
+            margin: 0 20px;
             text-decoration: none;
-            text-transform: uppercase;
-            margin-right: 15px;
+            color: #3498db;
+            transition: color 0.3s ease;
         }
 
         nav a:hover {
-            background-color: #575757;
-            text-decoration: underline;
+            color: #1abc9c;
         }
 
+        /* Section Styles */
         section {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            margin-bottom: 40px;
+            padding: 60px 20px;
+            text-align: center;
         }
 
-        .project {
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: #666;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #f0f0f0;
+        }
+
+        /* Project Section Styles */
+        .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
@@ -63,28 +92,74 @@
         .project-item {
             background-color: #fff;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .project-item p {
+            color: #666;
         }
 
         .project-item a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            color: #3498db;
+            border: 2px solid #3498db;
             text-decoration: none;
-            color: #282c34;
-            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
+        .project-item a:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #3498db;
+            color: white;
+        }
+
+        #contact a {
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Footer Styles */
         footer {
-            background-color: #282c34;
-            color: #7f8c8d;
+            background-color: #1a1a1a;
+            color: #aaa;
             text-align: center;
-            padding: 10px;
-            margin-top: 40px;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
-<body>
 
+<body>
     <header>
         <h1>Ahmad Aliff Haiqal</h1>
         <p>Data Analyst | Mechanical Engineer</p>
@@ -98,21 +173,20 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm a mechanical engineer transitioning into data analytics. I combine analytical problem-solving skills with a passion for data-driven decision making. My engineering background has equipped me to approach complex systems, optimize processes, and work with large datasets.</p>
-        <p>Currently, I'm leveraging Python, SQL, and Excel to extract insights from data, build visualizations, and support informed business decisions.</p>
+        <p>I'm a mechanical engineer transitioning into data analytics. I combine analytical problem-solving skills with a passion for data-driven decision-making. I am excited to leverage Python, SQL, and Excel to drive impactful data solutions.</p>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
+        <div class="project-grid">
             <div class="project-item">
                 <h3>Retail Sales Analysis SQL Project</h3>
-                <p>This project demonstrates SQL skills used by data analysts to explore, clean, and analyze retail sales data. It involves setting up a retail sales database, performing EDA, and answering business questions through SQL queries.</p>
+                <p>This project demonstrates SQL skills in analyzing retail sales data, setting up databases, and answering business questions.</p>
                 <a href="https://github.com/halospartaz/sql_retail_sales" target="_blank">View on GitHub</a>
             </div>
             <div class="project-item">
-                <h3>Project 2</h3>
-                <p>Brief description of your project.</p>
+                <h3>Placeholder</h3>
+                <p>Placeholder</p>
                 <a href="https://github.com/your-username/project2" target="_blank">View on GitHub</a>
             </div>
         </div>
@@ -121,12 +195,13 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:haiqal6@gmail.com">haiqal6@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/ahmadaliffhaiqal" target="_blank">ahmadaliffhaiqal</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/ahmadaliffhaiqal" target="_blank">Ahmad Aliff Haiqal</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2023 Ahmad Aliff Haiqal</p>
+        <p>&copy; 2025 Ahmad Aliff Haiqal</p>
     </footer>
 
 </body>
+
 </html>
